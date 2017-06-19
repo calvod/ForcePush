@@ -94,7 +94,7 @@ while (True):
 
                     #if pixel is green enough, make it white
                     #was 1.1
-                    if red < 120 and green > 100 and blue < 130 and :
+                    if red < 120 and green > 100 and blue < 130 and green > (red * 1.1) and green > (blue * 1.1):
                             resizedInputPhoto[i, j] = [255, 255, 255]
                     else: #else, make it black
                             resizedInputPhoto[i, j] = [0, 0, 0]
